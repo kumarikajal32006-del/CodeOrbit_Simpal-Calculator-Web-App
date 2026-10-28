@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #171724;
+
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 480px;
+    min-height: 680px;
+
+    padding: 35px;
+
+    background: #222333;
+
+    border: 2px solid #777b91;
+    border-radius: 25px;
+
+    box-shadow:
+        10px 10px 25px #11111b,
+        -5px -5px 15px #303144;
+}
+
+/* Display */
+
+#display {
+    width: 100%;
+    height: 130px;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 55px;
+    text-align: right;
+
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+/* Button grid */
+
+.buttons {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+/* Normal buttons */
+
+button {
+    width: 80px;
+    height: 70px;
+
+    border: none;
+    border-radius: 20px;
+
+    background: #292a3a;
+
+    color: white;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        8px 8px 15px #151520,
+        -5px -5px 12px #34364a;
+}
+
+button:active {
+    box-shadow:
+        inset 5px 5px 10px #151520,
+        inset -5px -5px 10px #34364a;
+}
+
+/* AC, DEL, % */
+
+.special {
+    color: #c8f36b;
+}
+
+/* Operators */
+
+.operator {
+    color: #c8f36b;
+}
+
+/* Equal button */
+
+.equal {
+    background: #ff9d00;
+
+    color: white;
+
+    border-radius: 50%;
+
+    width: 80px;
+    height: 80px;
+}
